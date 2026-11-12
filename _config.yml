@@ -1,0 +1,44 @@
+remote_theme: "mmistakes/minimal-mistakes@4.28.1"
+minimal_mistakes_skin: catppuccin_mocha
+
+title: "Supesh Uthayarajah"
+description: "Projects and Writing"
+url: "https://supesh-uth.github.io"
+baseurl: ""
+
+plugins:
+  - jekyll-include-cache
+  - jekyll-remote-theme
+  - jekyll-paginate
+
+include:
+  - _pages
+
+paginate: 5
+Paginate_path: /page:num/
+
+author:
+  name: "Supesh Uthayarajah"
+  bio: "Bachelor in Physics (Hons). Alumni from OntarioTech University. Learning nuclear science."
+  location: "Toronto, ON"
+  links:
+    - label: "Github"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com.supesh-uth"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/supesh-uthayarajah/"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:supeshuthayarajah@gmail.com"
+
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path
+
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: single, author_profile: true }
+  - scope: { path: "", type: portfolio }
+    values: { layout: single, author_profile: true }
