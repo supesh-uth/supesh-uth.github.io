@@ -18,7 +18,8 @@ paginate: 5
 Paginate_path: /page:num/
 
 author:
-  name: "Supesh Uthayarajah"
+  name: "Supesh Uthayarajah"\
+  avatar: "/assets/images/avatar.jpg"
   bio: "Bachelor in Physics (Hons). Alumni from OntarioTech University. Learning nuclear science."
   location: "Toronto, ON"
   links:
